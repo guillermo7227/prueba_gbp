@@ -1,3 +1,23 @@
+## Como correr esta prueba
+
+Clona el repositorio
+
+    git clone https://github.com/guillermo7227/prueba_gbp.git
+
+Entra al directorio e instala las dependencia PHP
+
+    cd prueba_gbp
+    composer install
+
+Instala las dependencias Javascript
+
+    npm install && npm run prod
+
+Corre el servidor
+
+    php artisan serve
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
