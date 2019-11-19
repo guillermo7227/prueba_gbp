@@ -271,6 +271,7 @@ export default {
           $('#crear-producto-modal').modal('hide');
           bootbox.alert(response.mensaje);
           this.recargarDatos();
+          $("form .form-control").val('');
         },
         error: (response) => {
           bootbox.alert('ERROR. No se pudo crear el registro.');

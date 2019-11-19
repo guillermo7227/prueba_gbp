@@ -2104,6 +2104,8 @@ __webpack_require__.r(__webpack_exports__);
           bootbox.alert(response.mensaje);
 
           _this2.recargarDatos();
+
+          $("form .form-control").val('');
         },
         error: function error(response) {
           bootbox.alert('ERROR. No se pudo crear el registro.');

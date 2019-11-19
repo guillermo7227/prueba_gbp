@@ -14,7 +14,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
-        factory(Bodega::class, 5)->create();
-        factory(Producto::class, 30)->create();
+        factory(Bodega::class)->create(['nombre' => 'Centro']);
+        factory(Bodega::class)->create(['nombre' => 'Oriente']);
+        factory(Bodega::class)->create(['nombre' => 'Occidente']);
+        factory(Bodega::class)->create(['nombre' => 'Sur']);
+
+        factory(Producto::class, 25)->create();
     }
 }
