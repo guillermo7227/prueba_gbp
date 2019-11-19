@@ -13,6 +13,25 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+
+Route::group([
+    'prefix' => 'productos',
+], function () {
+
+    Route::get('todos', 'ProductoController@todos');
+    Route::post('crear', 'ProductoController@crear');
+    Route::put('cambiar-estado', 'ProductoController@cambiarEstado');
+});
+
+
+
+Route::group([
+    'prefix' => 'bodegas',
+], function () {
+
+    Route::get('todos', 'BodegaController@todos');
 });

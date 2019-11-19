@@ -14,7 +14,7 @@
     </head>
     <body>
 
-        <div class="container">
+        <div class="container mt-2 mb-5">
 
           <div id="app">
             @yield('contenido')
