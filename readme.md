@@ -9,7 +9,7 @@ Entra al directorio e instala las dependencia PHP
     cd prueba_gbp
     composer install
 
-Instala las dependencias Javascript
+Instala las dependencias Javascript y compila los recursos
 
     npm install && npm run prod
 
