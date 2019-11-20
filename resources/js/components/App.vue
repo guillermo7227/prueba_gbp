@@ -176,13 +176,13 @@ export default {
           dataClass: 'text-center',
           titleClass: 'text-center bg-dark text-light',
           callback: (estado) => {
-            switch (estado) {
+            switch (Number.parseInt(estado)) {
               case 0:
                 return `<span class="bg-danger font-weight-bold text-white px-2 py-1 rounded">Inactivo</span>`;
               case 1:
                 return `<span class="bg-success font-weight-bold text-white px-2 py-1 rounded">Activo</span>`;
               default:
-                return tipo
+                return estado
             }
           }
         },
@@ -252,6 +252,7 @@ export default {
       }
 
       this.recargarDatos();
+      this.$refs.vuetable.changePage(1)
     },
 
     crearProducto() {

@@ -11,22 +11,19 @@ Entra al directorio e instala las dependencias PHP
     cd prueba_gbp
     composer install
 
-Instala las dependencias Javascript y compila los recursos
-
-    npm install && npm run prod
-
 ### Preparar la base de datos
 
 La app está configurada para funcionar con estos datos:
-Nombre de la base de datos: **prueba_gbp**
-Usuario MySQL: **usuario**
-Contraseña: **12345**
+
+- Nombre de la base de datos: **prueba_gbp**
+- Usuario MySQL: **usuario**
+- Contraseña: **12345**
 
 Con la base de datos preparada, se puede correr las migraciones
 
     php artisan migrate --seed
 
-Para termina, se corre el servidor
+Para terminar, se corre el servidor
 
     php artisan serve
 
